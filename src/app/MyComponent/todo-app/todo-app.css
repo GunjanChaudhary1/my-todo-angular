@@ -1,0 +1,41 @@
+.parent {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.row{
+  padding-left: 100px;
+}
+
+.task-item {
+  transition: all 0.2s ease;
+  border-left: 5px solid transparent;
+}
+
+.task-item:hover {
+  background-color: #f3f7ff;
+  transform: scale(1.01);
+}
+
+.task-item.completed {
+  background-color: #e9f9ee !important;
+  border-left-color: #28a745;
+}
+
+.task-item.hold {
+  background-color: #fff8e6 !important;
+  border-left-color: #ffc107;
+}
+
+.status-badge {
+  min-width: 85px;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+select.form-select {
+  min-width: 110px;
+}
