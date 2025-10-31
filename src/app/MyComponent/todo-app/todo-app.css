@@ -1,13 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
 .parent {
   background-color: #f8fafc;
   border-radius: 12px;
-  padding: 20px;
 }
 
-.row{
-  padding-left: 100px;
-}
-
+/* Task styling */
 .task-item {
   transition: all 0.2s ease;
   border-left: 5px solid transparent;
@@ -39,3 +38,90 @@
 select.form-select {
   min-width: 110px;
 }
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .parent {
+    padding: 1.5rem;
+  }
+
+  .form-select.w-25 {
+    width: 50% !important;
+  }
+
+  .task-item h6 {
+    font-size: 0.95rem;
+  }
+
+  button.btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .parent {
+    padding: 1rem;
+  }
+
+  form.row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form .col-md-6,
+  form .col-md-2 {
+    width: 100%;
+  }
+
+  .form-select.w-25 {
+    width: 80% !important;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .task-item .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .task-item h6 {
+    font-size: 0.9rem;
+  }
+
+  select.form-select-sm {
+    width: 100%;
+  }
+
+  button.btn-sm {
+    width: 100%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .parent {
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .status-badge {
+    font-size: 0.7rem;
+    min-width: 70px;
+  }
+
+  .form-select.w-25 {
+    width: 100% !important;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+}
+
